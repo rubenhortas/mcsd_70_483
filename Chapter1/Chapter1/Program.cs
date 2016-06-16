@@ -14,7 +14,11 @@
             //Tasks.Start();
             //TasksReturningValues.Start();
             //AddingContinuationToTasks.Start();
-            AttachingChildTasksToParentTask.Start();
+            //AttachingChildTasksToParentTask.Start();
+            //TaskFactoryEx.Start();
+            //TaskWaitAll.Start();
+            //TaskWaitAny.Start();
+            Parallelism.Start();
         }
     }
 }
