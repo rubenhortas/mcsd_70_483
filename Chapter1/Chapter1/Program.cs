@@ -18,7 +18,8 @@
             //TaskFactoryEx.Start();
             //TaskWaitAll.Start();
             //TaskWaitAny.Start();
-            Parallelism.Start();
+            //Parallelism.Start();
+            AsyncAndAwait.Start();
         }
     }
 }
