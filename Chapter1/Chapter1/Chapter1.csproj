@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddingContinuationToTasks.cs" />
+    <Compile Include="AsyncAndAwait.cs" />
     <Compile Include="AttachingChildTasksToParentTask.cs" />
     <Compile Include="BackgroundThreads.cs" />
     <Compile Include="CommonCode.cs" />
