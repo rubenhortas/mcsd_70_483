@@ -19,7 +19,14 @@
             //TaskWaitAll.Start();
             //TaskWaitAny.Start();
             //Parallelism.Start();
-            AsyncAndAwait.Start();
+            //AsyncAndAwait.Start();
+            //ScalabilityVsResponsiveness.Start();
+            //UnorderedParallelQuery.Start();
+            //OrderedParallelQuery.Start();
+            //ParallelQuerySequential.Start();
+            //ForAllEx.Start();
+            CatchingAggregateExceptions.Start();
         }
     }
 }
+

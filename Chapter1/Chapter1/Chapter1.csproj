@@ -47,12 +47,17 @@
     <Compile Include="AsyncAndAwait.cs" />
     <Compile Include="AttachingChildTasksToParentTask.cs" />
     <Compile Include="BackgroundThreads.cs" />
+    <Compile Include="CatchingAggregateExceptions.cs" />
     <Compile Include="CommonCode.cs" />
+    <Compile Include="ForAllEx.cs" />
     <Compile Include="Multithreading.cs" />
+    <Compile Include="OrderedParallelQuery.cs" />
     <Compile Include="Parallelism.cs" />
+    <Compile Include="ParallelQuerySequential.cs" />
     <Compile Include="ParameterizedThreadStartExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScalabilityVsResponsiveness.cs" />
     <Compile Include="StoppingThreads.cs" />
     <Compile Include="TaskFactoryEx.cs" />
     <Compile Include="Tasks.cs" />
@@ -62,6 +67,7 @@
     <Compile Include="TheadLocalEx.cs" />
     <Compile Include="ThreadPoolEx.cs" />
     <Compile Include="ThreadStaticAttributes.cs" />
+    <Compile Include="UnorderedParallelQuery.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
