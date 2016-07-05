@@ -3,12 +3,15 @@ using System.Linq;
 
 namespace Chapter1
 {
+    // Disable "Jut my Code" to prevent Visual Studio breaks with "exception not handled by user code"
+    // This error is benign. You can press F5 to continue from it.
+    // Tools > Options > Debugging > General
     public static class CatchingAggregateExceptions
     {
         public static void Start()
         {
 
-            var numbers = Enumerable.Range(0, 50);
+            var numbers = Enumerable.Range(0, 20);
 
             try
             {
@@ -28,7 +31,7 @@ namespace Chapter1
         {
             if (i % 10 == 0)
             {
-                throw new ArgumentException("i");
+                throw new ArgumentException("exception");               
             }
             
             return (i % 2 == 0);
