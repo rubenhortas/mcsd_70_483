@@ -25,7 +25,8 @@
             //OrderedParallelQuery.Start();
             //ParallelQuerySequential.Start();
             //ForAllEx.Start();
-            CatchingAggregateExceptions.Start();
+            //CatchingAggregateExceptions.Start();
+            ConcurrentCollections.Start();
         }
     }
 }
