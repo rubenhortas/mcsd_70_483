@@ -51,6 +51,8 @@
     <Compile Include="CommonCode.cs" />
     <Compile Include="ConcurrentCollections.cs" />
     <Compile Include="ForAllEx.cs" />
+    <Compile Include="InterlockedClass.cs" />
+    <Compile Include="LockKeyword.cs" />
     <Compile Include="Multithreading.cs" />
     <Compile Include="OrderedParallelQuery.cs" />
     <Compile Include="Parallelism.cs" />

@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            // Chapter 1
             //Multithreading.Start();
             //BackgroundThreads.Start();
             //ParameterizedThreadStartExample.Start();
@@ -32,7 +33,9 @@
             //ConcurrentCollections.EnumeratingAconcurrentBag();
             //ConcurrentCollections.ConcurrentStack();
             //ConcurrentCollections.ConcurrentQueue();
-            ConcurrentCollections.ConcurrentDictionary();
+            //ConcurrentCollections.ConcurrentDictionary();
+            //LockKeyword.Start();
+            InterlockedClass.Start();
         }
     }
 }
