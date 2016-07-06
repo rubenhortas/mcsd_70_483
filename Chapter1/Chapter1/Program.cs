@@ -26,7 +26,13 @@
             //ParallelQuerySequential.Start();
             //ForAllEx.Start();
             //CatchingAggregateExceptions.Start();
-            ConcurrentCollections.Start();
+            //ConcurrentCollections.BlockingCollection();
+            //ConcurrentCollections.BlockingCollection2();
+            //ConcurrentCollections.ConcurrentBag();
+            //ConcurrentCollections.EnumeratingAconcurrentBag();
+            //ConcurrentCollections.ConcurrentStack();
+            //ConcurrentCollections.ConcurrentQueue();
+            ConcurrentCollections.ConcurrentDictionary();
         }
     }
 }

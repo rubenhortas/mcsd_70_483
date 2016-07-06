@@ -9,3 +9,4 @@ C:\Users\virtual\Documents\c_sharp_examples\Chapter1\Chapter1\obj\Debug\Chapter1
 C:\Users\virtual\Documents\c_sharp_examples\Chapter1\Chapter1\obj\Debug\Chapter1.pdb
 C:\Users\virtual\Documents\c_sharp_examples\Chapter1\Chapter1\bin\Debug\Chapter1.exe
 C:\Users\virtual\Documents\c_sharp_examples\Chapter1\Chapter1\bin\Debug\Chapter1.pdb
+C:\Users\virtual\Documents\c_sharp_examples\Chapter1\Chapter1\obj\Debug\Chapter1.csprojResolveAssemblyReference.cache
