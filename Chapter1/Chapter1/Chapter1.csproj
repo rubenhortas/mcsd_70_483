@@ -47,6 +47,8 @@
     <Compile Include="AsyncAndAwait.cs" />
     <Compile Include="AttachingChildTasksToParentTask.cs" />
     <Compile Include="BackgroundThreads.cs" />
+    <Compile Include="CancellationToken.cs" />
+    <Compile Include="CancellationTokenContinueWith.cs" />
     <Compile Include="CatchingAggregateExceptions.cs" />
     <Compile Include="CommonCode.cs" />
     <Compile Include="ConcurrentCollections.cs" />
@@ -54,6 +56,7 @@
     <Compile Include="InterlockedClass.cs" />
     <Compile Include="LockKeyword.cs" />
     <Compile Include="Multithreading.cs" />
+    <Compile Include="OperationCanceledException.cs" />
     <Compile Include="OrderedParallelQuery.cs" />
     <Compile Include="Parallelism.cs" />
     <Compile Include="ParallelQuerySequential.cs" />
@@ -61,6 +64,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScalabilityVsResponsiveness.cs" />
+    <Compile Include="SettingATimeoutOnATask.cs" />
     <Compile Include="StoppingThreads.cs" />
     <Compile Include="TaskFactoryEx.cs" />
     <Compile Include="Tasks.cs" />
