@@ -19,8 +19,7 @@ namespace Chapter2
 
 
             String companyName;
-            Vendor vendor1 = new Vendor();            
-            vendor1.CompanyName = "Company1";
+            Vendor vendor1 = new Vendor { CompanyName = "Company1" };            
             Vendor vendor2 = new Vendor();
 
             companyName = vendor1?.CompanyName;
