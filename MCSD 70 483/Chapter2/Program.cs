@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            //Null_CoalescingOperator.Start();
-            ForLoopWithMultipleLoppVariables.Start();
+            Null_CoalescingOperator.Start();
+            //ForLoopWithMultipleLoppVariables.Start();
         }
     }
 }
