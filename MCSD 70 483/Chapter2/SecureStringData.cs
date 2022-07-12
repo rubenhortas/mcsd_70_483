@@ -25,7 +25,6 @@ namespace Chapter2
     /// that is used to initialize it is still in memory. To minimize the risk
     /// SecureSTring can deal with only individual characters at a time. 
     /// It's not possible to pass a string directly to a SecureString.
-    /// 
     public static class SecureStringData
     {
         public static void Start()
@@ -33,15 +32,18 @@ namespace Chapter2
             using (SecureString secureString = new SecureString())
             {
                 Console.Write("Please enter password: ");
+
                 while (true)
                 {
                     ConsoleKeyInfo cki = Console.ReadKey(true);
+
                     if (cki.Key == ConsoleKey.Enter)
                     {
                         break;
                     }
 
                     secureString.AppendChar(cki.KeyChar);
+
                     Console.Write("*");
                 }
 
@@ -50,21 +52,18 @@ namespace Chapter2
                 secureString.MakeReadOnly();
 
                 ConvertToUnsecureString(secureString);
-
-                Console.ReadLine();
             }
         }
 
-        /*
-         * Convert the SecureString back to a normal string.
-         * It's important to make sure that the regular string is cleared from memory
-         * as soon as possible. This is why there is a try/finally statement
-         * around the code. The finally statement makes sure that the string
-         * is removed from memory even if there is an exception thrown in the code.
-         */
+        // Convert the SecureString back to a normal string.
+        // It's important to make sure that the regular string is cleared from memory
+        // as soon as possible. This is why there is a try/finally statement
+        // around the code. The finally statement makes sure that the string
+        // is removed from memory even if there is an exception thrown in the code.
         private static void ConvertToUnsecureString(SecureString secureString)
         {
             IntPtr unmanagedString = IntPtr.Zero;
+
             try
             {
                 Console.Write("Your password is: ");
@@ -72,6 +71,7 @@ namespace Chapter2
                 // It offers five methods that can be used when decrypting a SecureString.
                 // Those methods accept a SecureString and return a IntPtr.
                 unmanagedString = Marshal.SecureStringToGlobalAllocUnicode(secureString);
+
                 Console.WriteLine(Marshal.PtrToStringUni(unmanagedString));
             }
             finally

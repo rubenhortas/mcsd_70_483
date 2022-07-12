@@ -2,11 +2,11 @@
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            //Null_CoalescingOperator.Start();
             //ForLoopWithMultipleLoppVariables.Start();
-            SecureStringData.Start();
+            //NullCoalescingOperator.Start();
+            //SecureStringData.Start();
         }
     }
 }
