@@ -11,8 +11,6 @@ namespace Chapter1
             {
                 Console.WriteLine("Working on a thread from threadpool");
             });
-
-            Console.ReadLine();
         }
     }
 }

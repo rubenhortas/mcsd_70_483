@@ -8,13 +8,14 @@ namespace Chapter1
     {
         public static void Start()
         {
-            Task longRunningTask = Task.Run(() => {
+            Task longRunningTask = Task.Run(() =>
+            {
                 Thread.Sleep(1000);
             });
 
             int index = Task.WaitAny(new[] { longRunningTask }, 1000);
 
-            if(index == -1)
+            if (index == -1)
             {
                 Console.WriteLine("Task timed out");
             }

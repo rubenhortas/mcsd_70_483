@@ -9,7 +9,7 @@ namespace Chapter1
         {
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("ThreadProc: {0}", i);
+                Console.WriteLine($"ThreadProc: {i}");
                 // Notify Windows that the thread is finished.
                 Thread.Sleep(0);
             }
@@ -19,7 +19,7 @@ namespace Chapter1
         {
             for (int i = 0; i < (int)o; i++)
             {
-                Console.WriteLine("ThreadProc: {0}", i);
+                Console.WriteLine($"ThreadProc: {i}");
                 // Notify Windows that the thread is finished.
                 Thread.Sleep(0);
             }

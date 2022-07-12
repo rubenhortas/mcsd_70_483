@@ -2,44 +2,43 @@
 {
     public static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            // Chapter 1
-            //Multithreading.Start();
-            //BackgroundThreads.Start();
-            //ParameterizedThreadStartExample.Start();
-            //StoppingThreads.Start();
-            //ThreadStaticAttributes.Start();
-            //ThreadLocalEx.Start();
-            //ThreadPoolEx.Start();
-            //Tasks.Start();
-            //TasksReturningValues.Start();
             //AddingContinuationToTasks.Start();
-            //AttachingChildTasksToParentTask.Start();
-            //TaskFactoryEx.Start();
-            //TaskWaitAll.Start();
-            //TaskWaitAny.Start();
-            //Parallelism.Start();
             //AsyncAndAwait.Start();
-            //ScalabilityVsResponsiveness.Start();
-            //UnorderedParallelQuery.Start();
-            //OrderedParallelQuery.Start();
-            //ParallelQuerySequential.Start();
-            //ForAllEx.Start();
+            //AttachingChildTasksToParentTask.Start();
+            //BackgroundThreads.Start();
+            //CancellationTokenContinueWith.Start();
+            //CancellationTokenEx.Start();
             //CatchingAggregateExceptions.Start();
             //ConcurrentCollections.BlockingCollection();
             //ConcurrentCollections.BlockingCollection2();
             //ConcurrentCollections.ConcurrentBag();
-            //ConcurrentCollections.EnumeratingAconcurrentBag();
-            //ConcurrentCollections.ConcurrentStack();
-            //ConcurrentCollections.ConcurrentQueue();
             //ConcurrentCollections.ConcurrentDictionary();
-            //LockKeyword.Start();
+            //ConcurrentCollections.ConcurrentQueue();
+            //ConcurrentCollections.ConcurrentStack();
+            //ConcurrentCollections.EnumeratingAconcurrentBag();
+            //ForAllEx.Start();
             //InterlockedClass.Start();
-            //CancellationTokenEx.Start();
-            //OperationCanceledException.Start();
-            //CancellationTokenContinueWith.Start();
-            SettingATimeoutOnATask.Start();
+            //LockKeyword.Start();
+            //Multithreading.Start();
+            //OperationCancelledException.Start();
+            //OrderedParallelQuery.Start();
+            //Parallelism.Start();
+            //ParallelQuerySequential.Start();
+            //ParameterizedThreadStartExample.Start();
+            //ScalabilityVsResponsiveness.Start();
+            //SettingATimeoutOnATask.Start();
+            //StoppingThreads.Start();
+            //Tasks.Start();
+            //TasksReturningValues.Start();
+            //TaskFactoryEx.Start();
+            //TaskWaitAll.Start();
+            //TaskWaitAny.Start();
+            //ThreadLocalEx.Start();
+            //ThreadPoolEx.Start();
+            //ThreadStaticAttributes.Start();
+            //UnorderedParallelQuery.Start();
         }
     }
 }

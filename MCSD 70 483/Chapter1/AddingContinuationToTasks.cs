@@ -9,12 +9,14 @@ namespace Chapter1
         {
             Task<int> t = Task.Run(() => { return 42; });
 
-            t.ContinueWith((i) => {
+            t.ContinueWith((i) =>
+            {
                 Console.WriteLine("Canceled");
 
-                }, TaskContinuationOptions.OnlyOnCanceled);
+            }, TaskContinuationOptions.OnlyOnCanceled);
 
-            t.ContinueWith((i) => {
+            t.ContinueWith((i) =>
+            {
                 Console.WriteLine("Faulted");
             }, TaskContinuationOptions.OnlyOnFaulted);
 
@@ -24,7 +26,6 @@ namespace Chapter1
             }, TaskContinuationOptions.OnlyOnRanToCompletion);
 
             completedTask.Wait();
-            Console.ReadLine();
         }
     }
 }

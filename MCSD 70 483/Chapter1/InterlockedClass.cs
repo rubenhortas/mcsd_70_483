@@ -12,14 +12,15 @@ namespace Chapter1
 
             var up = Task.Run(() =>
             {
-                for(int i = 0; i< 1000000; i++)
+                for (int i = 0; i < 1000000; i++)
                 {
                     Interlocked.Increment(ref n);
                 }
             });
 
-            var down = Task.Run(() => {
-                for(int i = 0; i < 1000000; i++)
+            var down = Task.Run(() =>
+            {
+                for (int i = 0; i < 1000000; i++)
                 {
                     Interlocked.Decrement(ref n);
                 }
@@ -28,7 +29,6 @@ namespace Chapter1
             up.Wait();
 
             Console.WriteLine(n);
-            Console.ReadLine();
         }
     }
 }

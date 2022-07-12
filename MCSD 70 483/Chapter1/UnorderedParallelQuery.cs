@@ -14,8 +14,6 @@ namespace Chapter1
             {
                 Console.WriteLine(i);
             }
-
-            Console.ReadLine();
         }
     }
 }

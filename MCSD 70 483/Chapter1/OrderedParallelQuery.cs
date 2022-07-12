@@ -10,7 +10,7 @@ namespace Chapter1
             var numbers = Enumerable.Range(0, 10);
             var parallelResult = numbers.AsParallel().Where(i => i % 2 == 0).AsOrdered().ToArray();
 
-            foreach(int i in parallelResult)
+            foreach (int i in parallelResult)
             {
                 Console.WriteLine(i);
             }

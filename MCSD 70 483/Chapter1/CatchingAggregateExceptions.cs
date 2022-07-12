@@ -23,17 +23,15 @@ namespace Chapter1
             {
                 Console.WriteLine("There where {0} exceptions", e.InnerExceptions.Count());
             }
-
-            Console.ReadLine();
         }
 
         private static bool IsEven(int i)
         {
             if (i % 10 == 0)
             {
-                throw new ArgumentException("exception");               
+                throw new ArgumentException("exception");
             }
-            
+
             return (i % 2 == 0);
         }
     }

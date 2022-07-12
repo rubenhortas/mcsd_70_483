@@ -22,6 +22,7 @@ namespace Chapter1
 
             Console.WriteLine("Press enter to stop the task");
             Console.ReadLine();
+
             cancellationTokenSource.Cancel();
         }
     }

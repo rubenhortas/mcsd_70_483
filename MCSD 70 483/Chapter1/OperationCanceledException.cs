@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Chapter1
 {
-    public static class OperationCanceledException
+    public static class OperationCancelledException
     {
         public static void Start()
         {
@@ -13,11 +13,11 @@ namespace Chapter1
 
             Task task = Task.Run(() =>
             {
-                while(!token.IsCancellationRequested)
+                while (!token.IsCancellationRequested)
                 {
                     Console.Write("*");
                     Thread.Sleep(1000);
-                }            
+                }
                 token.ThrowIfCancellationRequested();
             }, token);
 
@@ -28,12 +28,13 @@ namespace Chapter1
 
                 cancellationTokenSource.Cancel();
                 task.Wait();
-            } catch(AggregateException e)
+            }
+            catch (AggregateException e)
             {
                 Console.WriteLine(e.InnerExceptions[0].Message);
             }
+
             Console.WriteLine("Press enter to end the application");
-            Console.ReadLine();
         }
     }
 }

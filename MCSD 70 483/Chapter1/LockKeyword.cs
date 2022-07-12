@@ -8,22 +8,22 @@ namespace Chapter1
         public static void Start()
         {
             int n = 0;
+            object lck = new object();
 
-            object _lock = new object();
-
-            var up = Task.Run(() => {
-                for(int i = 0; i < 1000000; i++)
+            var up = Task.Run(() =>
+            {
+                for (int i = 0; i < 1000000; i++)
                 {
-                    lock(_lock)
+                    lock (lck)
                     {
                         n++;
                     }
                 }
             });
 
-            for(int i = 0; i < 1000000; i++)
+            for (int i = 0; i < 1000000; i++)
             {
-                lock(_lock)
+                lock (lck)
                 {
                     n--;
                 }
@@ -32,7 +32,6 @@ namespace Chapter1
             up.Wait();
 
             Console.WriteLine(n);
-            Console.ReadLine();
         }
     }
 }

@@ -21,12 +21,14 @@ namespace Chapter1
             }, token).ContinueWith(t =>
             {
                 t.Exception.Handle((e) => true);
+
                 Console.WriteLine("You have canceled the task");
                 Console.ReadLine();
             }, TaskContinuationOptions.OnlyOnCanceled);
 
             Console.WriteLine("Press enter to stop the task");
             Console.ReadLine();
+
             cancellationTokenSource.Cancel();
         }
     }

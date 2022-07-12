@@ -13,7 +13,6 @@ namespace Chapter1
             });
 
             Console.WriteLine(t.Result);
-            Console.ReadLine();
         }
     }
 }
